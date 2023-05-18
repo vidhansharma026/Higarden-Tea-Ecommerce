@@ -13,7 +13,7 @@
 
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--
@@ -44,7 +44,7 @@
 
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
-        <div class="container d-flex justify-content-between align-items-center" style="background-color: ;#fbff09">
+        <div class="container d-flex justify-content-between align-items-center" style="background-color: #fbff09;">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="/"><img src="{% static 'img/Hi ! Garden Tea.png' %}" alt="" width="70" height="70"> 
             </a>
@@ -108,7 +108,7 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
                                 <h1 class="h1 text-success"><b>Hi Garden</b>Tea</h1>
-                                <h3 class="h2">Darjelling Tea</h3>
+                                <h3 class="h2">Darjeeling Tea</h3>
                                 <p>
                                     Darjeeling tea increases blood flow and reduces the oxidation of LDL cholesterol. Furthermore, 
                                     it is rich in quercetin. The compound has been found to reduce the risk of atherosclerosis,
@@ -128,7 +128,7 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">Hi Garden Tea</h1>
-                                <h3 class="h2">chocolate tea</h3>
+                                <h3 class="h2">Chocolate tea</h3>
                                 <p>
                                     The flavanols in chocolate have antioxidant, anti-inflammatory properties,
                                     keeping free radicals at bay. They help to invade cells and reduce cancer risk.
@@ -171,204 +171,30 @@
 
     <!-- Start Categories of The Month -->
 <div class="categories">
-    <section class="container py-5">
-        <div class="categories"></div>
-        <div class="row text-center pt-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1"><b>Choose your Tea</b></h1>
-            </div>
+  <section class="container py-5">
+    <div class="categories"></div>
+      <div class="row text-center pt-3">
+        <div class="col-lg-6 m-auto">
+          <h1 class="h1"><b>Choose your Tea</b></h1>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/lemon grass greent ea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Lemon Grass Tea<br>Lemon Grass whole leaf Organic Green tea is a smooth and delicate blend of antioxidant rich green tea underscored by a hint of refreshing lemon grass...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/lemon icea tea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Lemon Icea Tea<br>A regular dose of consuming lemon tea surely aids this and reduces the risk of cardiovascular diseases as well as lowers the risk of a stroke.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/peach ice tyea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Peach Ice Tea <br>Regardless if you are drinking peach leaf tea or peach tea blended with real or rooibos tea, you may expect a lot of potential health benefits.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/jasmine chamomile.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Jasmine Chamomile Tea<br>Blended with tender whole leaf organic green tea, this delicate tea is an invitation to relax. Fragrant Jasmine flowers and soothing Chamomile petals...
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/rose mint.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Rose Mint Tea<br>
-                            Rose petals with cooling mint create a medley of passion A new age blend, this tea is a heady combination of..
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/strawberry.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Strawberry Tea<br> black tea blended with aromatic strawberry digestive 
-                        ginger and aphrodisiac rose petals with a dash of peppermint...</p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/blackcurrent ice tea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Blackcurrent Ice Tea<br>
-                            Black currant may help to reduce inflammation which may be very beneficial for those suffering from diabetes, cardiovascular diseases and obesity
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <a href="#"><img src="{% static 'img/white tea.png' %}" class="rounded-circle img-fluid"></a>
-                  </div>
-                  <div class="flip-card-back">
-                    <P>White Tea<br>For skin glow and radiance and overall detoxification of the body with Organic White Tea.</P>
-                  </div>
+      </div>
+      <div class="row">
+        {% for i in item %}
+        <div class="col-4">
+          <div class="flip-card" tabIndex="0">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <a href="#"><img src="{{i.upload_img.url}}" class="rounded-circle img-fluid"></a>
+                </div>
+                <div class="flip-card-back">
+                  <p><br>{{i.discription}}</p>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/cranberry ice tea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Cranberry Tea<br>Cranberry tea is a rich source of vitamin C, E, and K, which are essential for the body. 
-                            It is said to eliminate toxins, burn fat, and increase metabolism, leading to weight loss. Moreover,
-                             its detox effects offer benefits for the liver, lymph nodes, kidneys, and urinary tract</p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/bluberry.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p> Bluberry Tea<br> Blueberry tea can offer a number of excellent health benefits, which may include its potential ability to protect against cancer, strengthen heart health, increase bone density, and boost the immune system.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/glowing skin.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                       <p>Glowing Skin Tea<br> skin glow and radiance and overall detoxification of the body with Organic Rooibos
-                       </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/chocolate tea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p> Chocolate Tea<br>The flavanols in chocolate have   antioxidant, anti-inflammatory properties,
-                        keeping free radicals at bay. They help to invade cells and reduce cancer risk.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/Darjelling Tea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                            <p>Darjeeling Tea<br>Masala chai is a tea      beverage made by boiling black tea in milk 
-                            and water with a mixture of aromatic herbs and spices.
-                            </p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-4 p-5 mt-3">
-                <div class="flip-card" tabIndex="0">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <a href="#"><img src="{% static 'img/green tea.png' %}" class="rounded-circle img-fluid"></a>
-                      </div>
-                      <div class="flip-card-back">
-                        <p>Green Tea<br>An enchanting blend from the most romantic place in Kashmir, India. Selected organic...</p>
-                      </div>
-                    </div>
-                  </div>
-            </div>
+            </div>  
         </div>
-    </section>
+        {% endfor %}
+      </div>
+  </section>
 </div>
     <!-- End Categories -->
     
